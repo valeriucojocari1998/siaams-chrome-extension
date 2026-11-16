@@ -41,6 +41,14 @@ Modern **Google Chrome** & **Microsoft Edge** compatibility extension for **SIA 
         └── capture-guide-screenshots.mjs        # Playwright generator for 21 RO/RU/EN guide screenshots
 ```
 
+## Version History (`v1/archive/`)
+Previous unpacked versions are preserved in [`v1/archive/`](v1/archive):
+- [`v1/archive/1.0.0`](v1/archive/1.0.0) — Initial Chrome compatibility polyfills, docked sidebar, Keep-Alive, crash recovery & 1-step Save
+- [`v1/archive/1.1.0`](v1/archive/1.1.0) — Live `RO | RU | EN` switcher, Word + Notion rich editor, Draft Vault manager & Copy-Only Viewer
+- [`v1/archive/1.1.1`](v1/archive/1.1.1) — Git-branch auto-save grouping & confirmed server-save churn cleanup
+- [`v1/archive/1.1.2`](v1/archive/1.1.2) — Git-style visual Diff & Merge restore modal and cross-page navigation
+- [`v1/archive/1.1.3`](v1/archive/1.1.3) — Real-typing CKEditor autosave fixes, Font Family & Size pickers, and Patient + Action draft cards
+
 ## Build Installers & Userscript Locally
 If you want to generate `INSTALL.bat`, `INSTALL.html`, `v1/dist/*.zip`, and `v1/dist/siaams-chrome-wrapper-v1.1.user.js`:
 ```bash
