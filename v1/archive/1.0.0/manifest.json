@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "SIA AMS Chrome Wrapper & Crash-Guard",
+  "version": "1.0.0",
+  "description": "Compatibilitate completă Google Chrome pentru SIA AMS (Hipocrate H3), meniu lateral modern, salvare într-un singur pas, Keep-Alive pentru sesiune și Auto-Save anti-crash.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.ams.md/*",
+        "http://www.ams.md/*"
+      ],
+      "js": [
+        "src/main-world-polyfills.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://www.ams.md/*",
+        "http://www.ams.md/*"
+      ],
+      "js": [
+        "src/ui-and-crash-guard.js"
+      ],
+      "css": [
+        "src/modern-chrome.css"
+      ],
+      "run_at": "document_end",
+      "world": "MAIN",
+      "all_frames": false
+    }
+  ]
+}
