@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "version": "1.1.3",
+  "default_locale": "ro",
+  "description": "__MSG_extDesc__",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.ams.md/*",
+        "http://www.ams.md/*"
+      ],
+      "js": [
+        "src/main-world-polyfills.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://www.ams.md/*",
+        "http://www.ams.md/*"
+      ],
+      "js": [
+        "src/i18n.js",
+        "src/rich-editor.js",
+        "src/diff-merge-ui.js",
+        "src/draft-vault-ui.js",
+        "src/ui-and-crash-guard.js"
+      ],
+      "css": [
+        "src/modern-chrome.css"
+      ],
+      "run_at": "document_end",
+      "world": "MAIN",
+      "all_frames": false
+    }
+  ]
+}
